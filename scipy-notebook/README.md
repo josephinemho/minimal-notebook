@@ -1,12 +1,11 @@
-![docker pulls](https://img.shields.io/docker/pulls/jupyter/scipy-notebook.svg) ![docker stars](https://img.shields.io/docker/stars/jupyter/scipy-notebook.svg) [![](https://images.microbadger.com/badges/image/jupyter/scipy-notebook.svg)](https://microbadger.com/images/jupyter/scipy-notebook "jupyter/scipy-notebook image metadata")
+# Jupyter Notebook Custom Stack 
 
-# Jupyter Notebook Scientific Python Stack
 
 ## What it Gives You
 
 * Jupyter Notebook 5.2.x
 * Conda Python 3.x environment
-* pandas, matplotlib, scipy, seaborn, scikit-learn, scikit-image, sympy, cython, patsy, statsmodel, cloudpickle, dill, numba, bokeh, vincent, beautifulsoup, xlrd pre-installed
+* pandas, matplotlib, scipy, seaborn, scikit-learn, bokeh
 * Unprivileged user `jovyan` (uid=1000, configurable, see options) in group `users` (gid=100) with ownership over `/home/jovyan` and `/opt/conda`
 * [tini](https://github.com/krallin/tini) as the container entrypoint and [start-notebook.sh](../base-notebook/start-notebook.sh) as the default command
 * A [start-singleuser.sh](../base-notebook/start-singleuser.sh) script useful for running a single-user instance of the Notebook server, as required by JupyterHub
