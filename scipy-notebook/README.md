@@ -1,4 +1,4 @@
-# Jupyter Notebook Custom Stack 
+# Jupyter Notebook Custom Stack (jmho)
 
 
 ## What it Gives You
