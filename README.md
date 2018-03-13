@@ -11,10 +11,10 @@
 
 Pull Docker image
 ```
-docker pull josephinemho/custom-notebook
+docker pull josephinemho/custom-dockerfile
 ```
 
 Run Docker container
 ```
-docker run -it -p 8888:8888 -v `pwd`:/home/jovyan/work --name myproject josephinemho/custom-notebook
+docker run -it -p 8888:8888 -v `pwd`:/home/jovyan/work --name myproject josephinemho/custom-dockerfile
 ```
