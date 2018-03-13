@@ -25,8 +25,8 @@ RUN conda install --quiet --yes \
     'scikit-learn=0.18*' \
     'hdf5=1.8.17' \
     'h5py=2.6*' \
-    'protobuf=3.*' && \
-    'xlrd'  && \
+    'protobuf=3.*' \
+    'xlrd' && \
     conda remove --quiet --yes --force qt pyqt && \
     conda clean -tipsy && \
 
