@@ -1,11 +1,11 @@
-# Jupyter Notebook *custom-notebook* Stack 
+# Jupyter Notebook 
 
 
 ## Includes
 
 * Jupyter Notebook 5.2.x
 * Conda Python 3.x environment
-* pandas, matplotlib, scipy, seaborn, scikit-learn, bokeh
+* pandas, matplotlib, scipy, seaborn, scikit-learn & supporting libraries
 
 ## How To Use
 
