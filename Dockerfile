@@ -10,8 +10,6 @@ RUN apt-get update && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
-USER $NB_UID
-
 # Install Python 3 packages
 # Remove pyqt and qt pulled in for matplotlib since we're only ever going to use notebook-friendly backends in these images
 RUN conda install --quiet --yes \
@@ -35,4 +33,5 @@ ENV XDG_CACHE_HOME /home/$NB_USER/.cache/
 RUN MPLBACKEND=Agg python -c "import matplotlib.pyplot" && \
     fix-permissions /home/$NB_USER
 
+# Switch back to jovyan to avoid accidental container runs as root
 USER $NB_UID
