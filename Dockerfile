@@ -7,6 +7,7 @@ USER root
 
 # Install pacakges 
 RUN apt-get update && \
+    apt-get install -y && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
