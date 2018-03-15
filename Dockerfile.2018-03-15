@@ -28,13 +28,8 @@ RUN conda install --quiet --yes \
     'protobuf=3.*' \
     'xlrd' && \
     conda remove --quiet --yes --force qt pyqt && \
-    conda clean -tipsy && \
-    npm cache clean && \
-    rm -rf $CONDA_DIR/share/jupyter/lab/staging && \
-    rm -rf /home/$NB_USER/.cache/yarn && \
-    rm -rf /home/$NB_USER/.node-gyp && \
-    fix-permissions $CONDA_DIR && \
-    fix-permissions /home/$NB_USER
+    conda clean -tipsy 
+
 
 
 # Import matplotlib the first time to build the font cache.
