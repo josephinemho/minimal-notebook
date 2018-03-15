@@ -1,4 +1,3 @@
-# This is the first layer of our image. Debian is similar to Ubuntu but more basic (no support for browsers, etc.)
 FROM jupyter/minimal-notebook
 
 LABEL maintainer="Josephine M. Ho <josephinemho@gmail.com>" 
