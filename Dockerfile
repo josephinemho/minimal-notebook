@@ -7,7 +7,7 @@ USER root
 
 # Install pacakges 
 RUN apt-get update && \
-    apt-get install -y && \
+    apt-get install -y --no-install-recommends libav-tools && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
