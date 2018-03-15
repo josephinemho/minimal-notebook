@@ -29,7 +29,9 @@ RUN conda install --quiet --yes \
     'protobuf=3.*' \
     'xlrd' && \
     conda remove --quiet --yes --force qt pyqt && \
-    conda clean -tipsy && \
+    conda clean -tipsy 
+
+
 
 # Import matplotlib the first time to build the font cache.
 ENV XDG_CACHE_HOME /home/$NB_USER/.cache/
