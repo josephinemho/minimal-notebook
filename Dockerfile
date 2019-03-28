@@ -4,11 +4,15 @@ LABEL maintainer="Josephine M. Ho <josephinemho@gmail.com>"
 
 USER root
 
-# Install pacakges 
+# Install packages 
 RUN apt-get update && \
     apt-get install -y --no-install-recommends libav-tools && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
+
+# Install RISE for presentation mode
+RUN pip install rise && jupyter-nbextension install rise --py && jupyter-nbextension enable rise --py
+
 
 USER $NB_UID
 
