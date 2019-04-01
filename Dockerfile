@@ -10,8 +10,8 @@ RUN apt-get update && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
-# Install RISE for presentation mode
-RUN pip install rise && jupyter-nbextension install rise --py && jupyter-nbextension enable rise --py
+## Install RISE for presentation mode
+#RUN pip install rise && jupyter-nbextension install rise --py && jupyter-nbextension enable rise --py
 
 
 USER $NB_UID
