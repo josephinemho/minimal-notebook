@@ -1,4 +1,4 @@
-FROM jupyter/minimal-notebook
+FROM jupyter/scipy-notebook
 
 LABEL maintainer="Josephine M. Ho <josephinemho@gmail.com>" 
 
