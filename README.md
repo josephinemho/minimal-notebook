@@ -2,19 +2,17 @@
 
 
 ## Includes
-
-* Jupyter Notebook 5.2.x
-* Conda Python 3.x environment
-* pandas, matplotlib, scipy, seaborn, scikit-learn & supporting libraries
+* Jupyter/minimal-notebook
+* vim
 
 ## How To Use
 
 Pull Docker image
 ```
-docker pull josephinemho/custom_dockerfile
+docker pull josephinemho/minimal-notebook
 ```
 
 Run Docker container
 ```
-docker run -it -p 8888:8888 -v `pwd`:/home/jovyan/work --name myproject josephinemho/custom_dockerfile
+docker run -it -p 8888:8888 -v `pwd`:/home/jovyan/work --name myproject josephinemho/minimal-notebook
 ```
